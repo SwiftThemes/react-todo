@@ -67,7 +67,7 @@ class App extends Component {
 
     deleteTodo = (e, todo) => {
         e.preventDefault();
-        const agree = window.confirm(`Are you sure you want to delete ${todo.title}`);
+        const agree = window.confirm(`Are you sure you want to delete "${todo.title}"`);
         if (agree) {
             const { todos } = this.state;
             const index = todos.indexOf(todo);

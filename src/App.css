@@ -87,6 +87,7 @@ input:focus {
     padding: 10px;
     display: block;
     color: #d6d6d6;
+    text-decoration: none;
 }
 
 #categories li a.active {
