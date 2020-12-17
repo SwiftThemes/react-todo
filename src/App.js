@@ -50,10 +50,9 @@ class App extends Component {
     };
 
     toggleTodo = (e, todo) => {
-        e.preventDefault();
-        let message = 'Are you sure you want to mark this as complete?';
+        let message = `Are you sure you want to mark "${todo.title}" as complete?`;
         if (todo.done) {
-            message = 'Are you sure you want to mark this as incomplete?';
+            message = `Are you sure you want to mark "${todo.title}" as incomplete?`;
         }
         const agree = window.confirm(message);
         if (agree) {
